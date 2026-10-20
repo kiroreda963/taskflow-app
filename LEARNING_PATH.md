@@ -46,10 +46,7 @@ Each step has a goal, the concepts to learn, a "done when" check, and hints (not
 
 **Done when:** the image is well under ~200 MB, `docker exec <c> whoami` is not `root`, and `docker ps` shows `healthy`.
 
-### 1.4 Docker Compose
-**Learn:** services, networks, `depends_on` with health conditions, named volumes.
-**Task:** `docker-compose.yml` with `db` (Postgres) and `app`. The app should wait for the database to be healthy.
-**Done when:** `docker compose up --build` gives you a working app, and your data survives `docker compose down` + `up` (named volume) but not `down -v`.
+ 
 
 **Stretch:** scan your image with `docker scout` or `trivy image`. Fix or understand any HIGH findings.
 
